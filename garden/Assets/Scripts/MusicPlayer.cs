@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
+//using System.Collections;
 
 public class MusicPlayer : MonoBehaviour {
 	static MusicPlayer instance = null;
@@ -23,7 +24,7 @@ public class MusicPlayer : MonoBehaviour {
 			music.Play();
 		}
 	}
-	
+
 	void OnLevelWasLoaded(int level){
 		Debug.Log("MusicPlayer: loaded level "+level);
 		music.Stop ();
